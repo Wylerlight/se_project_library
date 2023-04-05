@@ -20,7 +20,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   /* Add flex properties here */
 }
 
@@ -31,7 +30,6 @@
 
 .nav__links {
   display: flex;
-  align-items: center;
   list-style-type: none;
   column-gap: 20px;
   padding: 0;
@@ -269,21 +267,17 @@
   font-weight: 400;
   margin: 0;
   color: #fff;
-}
-
-.staff__cards-container {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 68px;
 }
 
 .staff__cards {
   display: flex;
   max-width: 760px;
-  margin-top: 68px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding-left: 0;
+  margin: auto;
 }
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
@@ -344,7 +338,6 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  flex-basis: auto;
   justify-content: center;
   gap: 40px;
   /* Add styles */
@@ -352,7 +345,7 @@
 
 .step {
   width: 220px;
-  /* Add styles */
+  /* Per Brief - width must be 220px */
 }
 
 .step__title {
@@ -389,7 +382,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
-  width: 154px;
+  max-width: 154px;
   margin-right: 120px;
 }
 
@@ -398,12 +391,15 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  gap: 32px;
   z-index: 1;
 }
 
 .about__paragraph {
   margin: 0 0 32px;
+}
+
+.about__paragraph:last-child {
+  margin: 0;
 }
 
 .about__circle {
@@ -435,7 +431,6 @@
 
 .footer__column_content_social {
   margin-left: 100px;
-  align-items: center;
 }
 
 .footer__logo {
@@ -451,7 +446,7 @@
 }
 
 .footer__list-item {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .footer__list-item:last-of-type {
